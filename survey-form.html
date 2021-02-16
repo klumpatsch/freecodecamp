@@ -15,37 +15,37 @@
   <p id="description">The official and very real survey counting the legs of our nation's inhabitants, individually.</p>
 
   <form id="survey-form">
-    <p><label for="name-label">
-      Name<br>
-      <input type="text" placeholder="your name" required>
-    </label></p>
-    <p><label for="email-label">
-      E-mail address<br>
-      <input type="email" placeholder="example@provider.com" required>
-    </label></p>
-    <p><label for="number-label">
-      Your personal number of legs:
-      <input type="number" min="0" max="5" placeholder="0-5" required>
-    </label></p>
+    <label for="name-label">
+      <label id="name-label">Name<br>
+      <input id="name" type="text" placeholder="your name" required>
+    </label></label>
+    <label for="email-label">
+      <label id="email-label">E-mail address<br>
+      <input id="email" type="email" placeholder="example@provider.com" required>
+    </label></label>
+    <label for="number-label">
+      <label id="number-label">Your personal number of legs:
+      <input id="number" type="number" min="0" max="5" placeholder="0-5" required>
+    </label></label>
 
     <p>For the following questions, if your leg number is 0, we would like to sensibly ask you to imagine it would be positive.</p>
 
     <p>
       Where do you prefer to use your leg(s)?<br>
       <label for="indoors">
-        <input id="indoors" type="radio" name="in-out">indoors
+        <input id="indoors" type="radio" name="in-out" value="indoors">indoors
       </label>
       <label for="outdoors">
-        <input id="outdoors" type="radio" name="in-out">outdoors
+        <input id="outdoors" type="radio" name="in-out" value="outdoors">outdoors
       </label>
       <label for="between">
-        <input id="between" type="radio" name="in-out">inbetween
+        <input id="between" type="radio" name="in-out" value="inbetween">inbetween
       </label>
     </p>
 
     <p>
       Which type of car does your rightmost leg feel most comfortable in?
-      <select name="cars" id="cars">
+      <select name="cars" id="dropdown">
         <option value="volvo">Volvo</option>
         <option value="saab">Saab</option>
         <option value="mercedes">Mercedes</option>
@@ -60,7 +60,7 @@
       <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
     </p>
     <textarea name="comments" rows="10" cols ="50">additional comments</textarea><br>
-    <button type="submit">submit</button>
+    <button id="submit" type="submit">submit</button>
   </form>
 </body>
 </html>
